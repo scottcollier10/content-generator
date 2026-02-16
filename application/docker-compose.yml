@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./.env:/app/.env
+      - ./config.yaml:/app/config.yaml
+      - ./credentials/:/app/credentials/
+      - ./logs/:/app/logs/
+    environment:
+      - FLASK_ENV=development
