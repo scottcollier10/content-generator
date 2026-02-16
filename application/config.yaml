@@ -1,0 +1,10 @@
+hubspot:
+  portal_id: "243444428"
+  default_template_id: "314854693604"
+
+google_drive:
+  brand_folder_id: "1Pg4I6weH13KGviqYclJ4SK7WxmdKEffD"
+
+logging:
+  level: INFO
+  output_dir: logs/
