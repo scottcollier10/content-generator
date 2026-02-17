@@ -58,7 +58,7 @@ docker-compose up --build
 ### Expose to Slack (development)
 
 ```bash
-ngrok http 5000
+ngrok http 5001
 ```
 
 Configure your Slack slash command to: `https://<ngrok-url>/slack-campaign`
