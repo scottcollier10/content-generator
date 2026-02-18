@@ -1,5 +1,7 @@
 # HubSpot Content Generator
-
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 A Dockerized Flask application that generates HubSpot email variations via Slack commands.
 
 ## Overview
