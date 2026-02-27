@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    ports:
+      # Maps container port 5000 to host port 5001
+      # (macOS AirPlay Receiver occupies 5000)
+      - "5001:5000"
+    volumes:
+      # Mount secrets and config as volumes — not baked into the image
+      - ./.env:/app/.env
+      - ./config.yaml:/app/config.yaml
+      - ./credentials/:/app/credentials/
+      - ./logs/:/app/logs/
+    environment:
+      - FLASK_ENV=development

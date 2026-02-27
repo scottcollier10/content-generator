@@ -1,0 +1,18 @@
+# Client-specific configuration
+# This file is safe to commit — no secrets here.
+# API keys and credentials belong in .env
+
+hubspot:
+  # Your HubSpot portal ID (found in your HubSpot URL: app.hubspot.com/email/PORTAL_ID/...)
+  portal_id: "YOUR_PORTAL_ID"
+  # Default email template ID to clone when none is specified in the Slack command
+  default_template_id: "YOUR_DEFAULT_TEMPLATE_ID"
+
+google_drive:
+  # Google Drive folder ID containing your brand markdown files
+  # Share this folder with your service account email
+  brand_folder_id: "YOUR_BRAND_FOLDER_ID"
+
+logging:
+  level: INFO
+  output_dir: logs/
